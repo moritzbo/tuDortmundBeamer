@@ -1,8 +1,6 @@
 # 🟢 TU Dortmund Beamer Theme
 
-The **TU Dortmund Beamer Theme** is a LaTeX presentation template that provides a professional and consistent design aligned with the university’s corporate design. It includes support for official TU colors, clean typography, and custom block styles.
-
-Ideal for students, researchers, and faculty at TU Dortmund looking for an easy-to-use, high-quality Beamer setup.
+This is an attempt of making a **TU Dortmund Beamer Theme** which is a LaTeX presentation template that provides a possibility to align with the university’s corporate design. It includes support for official TU colors, clean typography, and custom block styles.
 
 > ✅ This template is self-contained and easy to adapt. Includes examples for blocks, theorems, columns, and more.
 
@@ -24,7 +22,7 @@ Ideal for students, researchers, and faculty at TU Dortmund looking for an easy-
 
 To compile this theme correctly, make sure you have the following installed:
 
-- **LaTeX distribution** (e.g., TeX Live, MiKTeX, MacTeX)
+- **LaTeX distribution** (e.g., TeX Live, MiKTeX, MacTeX, ...)
 - **Beamer** package
 - **XCharter font** (`XCharter.sty`) – required for the font setup:
   - You can install it via your TeX package manager (`tlmgr install xcharter`) or equivalent
@@ -36,8 +34,10 @@ To compile this theme correctly, make sure you have the following installed:
 ## 📁 Files
 
 - `main.tex` — The main example presentation source
-- `beamerthemeTuDortmundBeamer.sty` — The theme definition
+- `beamerthemetuDortmundBeamer.sty` — The theme definition
 - `beamercolorthemeTuDortmundBeamer.sty` — TU color setup (easily customizable)
+- `beamerinnerthemetuDortmundBeamer.sty` — Inner Theme with custom blocks
+- `beamerfontthemetuDortmundBeamer.sty` — Font Theme build around Charter Font 
 - `reference.bib` — Example bibliography (optional)
 - `preview/` — Folder for screenshots of the theme
 
