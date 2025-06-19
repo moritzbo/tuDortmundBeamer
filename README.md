@@ -1,4 +1,4 @@
-<img src="preview/slide01.png" alt="Slide 1" width="400"/> <img src="preview/slide08.png" alt="Slide 8" width="400"/>
+![Slide 1](preview/slide01.pdf)
 
 
 # 🟢 TU Dortmund Beamer Theme
