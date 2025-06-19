@@ -1,6 +1,6 @@
 # 🟢 TU Dortmund Beamer Theme
 
-The **TU Dortmund Beamer Theme** is a LaTeX presentation template that offers a clean and minimal design inspired by the official TU Dortmund University corporate identity. It provides support for official TU colors, clear typography, and custom block environments.
+The **TU Dortmund Beamer Theme** is an unofficial Beamer theme inspired by the TU Dortmund corporate design. It’s a work in progress aiming to be simple, clean, and usable. It provides support for official TU colors, clear typography, and custom block environments.
 
 > ✅ This template is self-contained, easy to adapt, and includes examples for blocks, theorems, columns, and more.
 
