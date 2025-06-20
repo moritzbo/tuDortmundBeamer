@@ -71,7 +71,7 @@ You can switch between TU Dortmund color options inside `beamercolorthemeTuDortm
 
 ## Preview
 
-Below are some example slides created with the SimpleDarkBlue Beamer Theme:
+Below are some example slides created with the tuDortmund Beamer Theme:
 
 ![Slide 1](preview/slide01.webp)
 ![Slide 3](preview/slide03.webp)
