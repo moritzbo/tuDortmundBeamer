@@ -66,7 +66,7 @@ You can switch between TU Dortmund color options inside `beamercolorthemeTuDortm
 % TU OPTION (LESS BRIGHT GREEN)
 %\setbeamercolor{title}{bg=tugreen80,fg=white}
 %\setbeamercolor{frametitle}{bg=tugreen80,fg=white}
-
+```
 ---
 
 ## Preview
