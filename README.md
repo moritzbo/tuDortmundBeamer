@@ -7,7 +7,7 @@
 
 The **TU Dortmund Beamer Theme** is an unofficial Beamer theme inspired by the TU Dortmund corporate design. It’s a work in progress aiming to be simple, clean, and usable. It provides support for official TU colors, clear typography, and custom block environments.
 
-> ✅ This template is self-contained, easy to adapt, and includes examples for blocks, theorems, columns, and more.
+> This template is self-contained, easy to adapt, and includes examples for blocks, theorems, columns, and more.
 
 ---
 
@@ -55,10 +55,14 @@ To compile this theme, make sure you have the following installed:
 You can switch between TU Dortmund color options inside `beamercolorthemeTuDortmundBeamer.sty`:
 
 ```latex
-% Bright green (default)
-\setbeamercolor{title}{bg=tugreen,fg=white}
-\setbeamercolor{frametitle}{bg=tugreen,fg=white}
+% GENERAL DARK GREEN THEME
+\setbeamercolor{title}{bg=CalPolyGreen,fg=white}
+\setbeamercolor{frametitle}{bg=CalPolyGreen,fg=white}
 
-% Darker green variant (optional)
+% TU OPTION (BRIGHT GREEN)
+%\setbeamercolor{title}{bg=tugreen,fg=white}
+%\setbeamercolor{frametitle}{bg=tugreen,fg=white}
+
+% TU OPTION (LESS BRIGHT GREEN)
 %\setbeamercolor{title}{bg=tugreen80,fg=white}
 %\setbeamercolor{frametitle}{bg=tugreen80,fg=white}
