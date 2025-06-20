@@ -1,4 +1,4 @@
-![Slide 1](preview/slide01.pdf)
+![Slide 1](preview/slide01.webp)
 
 
 # 🟢 TU Dortmund Beamer Theme
