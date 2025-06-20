@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="preview/slide01.webp" width="33%" />
-  <img src="preview/slide08.webp" width="33%" />
-  <img src="preview/slide10.webp" width="33%" />
+  <img src="preview/slide01.webp" width="50%" />
+  <img src="preview/slide08.webp" width=50%" />
 </p>
 
 # 🟢 TU Dortmund Beamer Theme
