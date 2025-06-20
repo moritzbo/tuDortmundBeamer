@@ -85,10 +85,3 @@ Below are some example slides created with the SimpleDarkBlue Beamer Theme:
 ![Slide 15](preview/slide15.webp)
 
 
-![Slide 2](preview/slide-2.webp)
-![Slide 3](preview/slide-3.webp)
-![Slide 4](preview/slide-4.webp)
-![Slide 5](preview/slide-5.webp)
-![Slide 6](preview/slide-6.webp)
-![Slide 9](preview/slide-9.webp)
-![Slide 10](preview/slide-10.webp)
