@@ -1,0 +1,313 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\usetheme{tuDortmundBeamer} % Use the custom theme created in the same directory
+
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{siunitx}
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc} 
+
+
+
+%----------------------------------------------------------------------------------------
+%    TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{Your Presentation Title Here} % Title of your presentation
+\subtitle{Subtitle of Your Presentation} % Subtitle, can be omitted if not needed
+
+\author{Moritz Bosse}
+
+\institute
+{
+    Department of High Energy Theory \\
+    TU Dortmund University % Your institution for the title page
+}
+\date{\today} % Date, can be changed to a custom date
+
+%----------------------------------------------------------------------------------------
+%    PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering] % Use noframenumbering to avoid numbering this slide
+    % Print the title page as the first slide
+    \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+    % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \tableofcontents
+\end{frame}
+
+%------------------------------------------------
+\section{First Section}
+%------------------------------------------------
+
+\begin{frame}{Bullet Points}
+    \begin{itemize}
+        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
+        \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
+        \item Nam cursus est eget velit posuere pellentesque
+        \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Blocks of Highlighted Text}
+    In this slide, some important text will be \alert{highlighted} because it's important. Please, don't abuse it.
+
+    \begin{block}{Block}
+        Sample text
+    \end{block}
+
+    \begin{alertblock}{Alertblock}
+        Sample text in red box
+    \end{alertblock}
+
+    \begin{examples}
+        Sample text in blue box. The title of the block is ``Examples".
+    \end{examples}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Additional Block Types}
+Here are some additional block types that you can use to personalize your presentation:
+    \begin{blueblock}{Typical Block but in Blue}
+        \begin{itemize}
+          \item Just a typical block but in blue
+          \item Can be used with \texttt{\textbackslash begin\{blueblock\}} environment
+        \end{itemize}
+    \end{blueblock}
+    \begin{greenblock}{Typical Block but in Green as the Theme}
+        \begin{itemize}
+          \item Just a typical block but in the same green as the theme
+          \item Can be used with \texttt{\textbackslash begin\{greenblock\}} environment
+        \end{itemize}
+    \end{greenblock}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{TU Dortmund Theme}
+If you really want to use the TU Dortmund color theme, you can use the following commands to include it in your presentation:
+        \begin{tublock}{Typical Block but in TU Dortmund Green}
+            \begin{itemize}
+              \item Just a typical block but in TU Dortmund green
+              \item Can be used with \texttt{\textbackslash begin\{tublock\}} environment
+            \end{itemize}
+        \end{tublock}
+        \begin{tuorangeblock}{Typical Block but in TU Dortmund Orange}
+            \begin{itemize}
+              \item Just a typical block but in TU Dortmund orange
+              \item Can be used with \texttt{\textbackslash begin\{tuorangeblock\}} environment
+            \end{itemize}
+        \end{tuorangeblock}
+\end{frame}
+
+% ------------------------------------------------
+
+\begingroup
+\setbeamercolor{title}{bg=tugreen,fg=white}
+\setbeamercolor{frametitle}{bg=tugreen,fg=white}
+
+\begin{frame}[fragile]{Changing the TU Color Scheme}
+    You can change the color scheme of title and frame title in the theme by modifying:
+
+    \begin{itemize}
+        \item \texttt{beamercolorthemeTuDortmundBeamer.sty}
+    \end{itemize}
+
+Replace the default dark green color with the TU-branded options by commenting/uncommenting:
+
+\begin{block}{Default Dark Green (CalPolyGreen)}
+    \begin{verbatim}
+    \setbeamercolor{title}{bg=CalPolyGreen,fg=white}
+    \setbeamercolor{frametitle}{bg=CalPolyGreen,fg=white}
+    \end{verbatim}
+\end{block}
+
+\begin{block}{Bright TU Green (tugreen)}
+    \begin{verbatim}
+    %\setbeamercolor{title}{bg=tugreen,fg=white}
+    %\setbeamercolor{frametitle}{bg=tugreen,fg=white}
+    \end{verbatim}
+\end{block}
+\end{frame}
+\endgroup
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \begingroup
+    \setbeamercolor{title}{bg=tugreen,fg=white}
+    \setbeamercolor{frametitle}{bg=tugreen,fg=white}
+    \titlepage
+    \endgroup
+\end{frame}
+
+%------------------------------------------------
+
+\begingroup
+\setbeamercolor{title}{bg=tugreen80,fg=white}
+\setbeamercolor{frametitle}{bg=tugreen80,fg=white}
+
+\begin{frame}[fragile]{Changing the TU Color Scheme}
+    If you don’t like the bright TU green, you can also use a less bright green by modifying:
+
+    \begin{itemize}
+        \item \texttt{beamercolorthemeTuDortmundBeamer.sty}
+    \end{itemize}
+
+Replace the default dark green color with TU-branded option by commenting/uncommenting:
+
+\begin{block}{Default Dark Green (CalPolyGreen)}
+    \begin{verbatim}
+    \setbeamercolor{title}{bg=CalPolyGreen,fg=white}
+    \setbeamercolor{frametitle}{bg=CalPolyGreen,fg=white}
+    \end{verbatim}
+\end{block}
+
+\begin{block}{TU Green / 80\% (tugreen80)}
+    \begin{verbatim}
+    %\setbeamercolor{title}{bg=tugreen80,fg=white}
+    %\setbeamercolor{frametitle}{bg=tugreen80,fg=white}
+    \end{verbatim}
+\end{block}
+\end{frame}
+\endgroup
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \begingroup
+    \setbeamercolor{title}{bg=tugreen80,fg=white}
+    \setbeamercolor{frametitle}{bg=tugreen80,fg=white}
+    \titlepage
+    \endgroup
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Multiple Columns}
+    \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+        \column{.45\textwidth} % Left column and width
+        \textbf{Heading}
+        \begin{enumerate}
+            \item Statement
+            \item Explanation
+            \item Example
+        \end{enumerate}
+
+        \column{.45\textwidth} % Right column and width
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{Second Section}
+%------------------------------------------------
+
+\begin{frame}{Table}
+    \begin{table}
+        \begin{tabular}{l l l}
+            \toprule
+            \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2} \\
+            \midrule
+            Treatment 1         & 0.0003262           & 0.562               \\
+            Treatment 2         & 0.0015681           & 0.910               \\
+            Treatment 3         & 0.0009271           & 0.296               \\
+            \bottomrule
+        \end{tabular}
+        \caption{Table caption}
+    \end{table}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Definitions and Theorems}
+    \begin{definition}[Compactness]
+        A topological space $X$ is \emph{compact} if every open cover of $X$ has a finite subcover.
+    \end{definition}
+    \begin{definition}[Paracompactness]
+        A topological space $X$ is \emph{paracompact} if every open cover of $X$ admits an open locally finite refinement that also covers $X$.
+    \end{definition}
+    \begin{theorem}[Heine--Borel Theorem]
+        A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded.
+    \end{theorem}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Example: Heine--Borel Theorem}
+    \begin{example}
+        Consider the interval $[0, 1] \subset \mathbb{R}$.
+
+        \begin{itemize}
+            \item It is \textbf{closed}: it contains its endpoints 0 and 1.
+            \item It is \textbf{bounded}: all points lie between 0 and 1.
+            \item Therefore, by the Heine--Borel Theorem, $[0,1]$ is \textbf{compact}.
+        \end{itemize}
+
+        Now consider the open interval $(0, 1)$:
+        \begin{itemize}
+            \item It is \textbf{bounded} but \textbf{not closed}.
+            \item It is \textbf{not compact}.
+            \item For example, the open cover 
+            \[
+                \left\{ \left( \frac{1}{n}, 1 - \frac{1}{n} \right) \mid n \geq 2 \right\}
+            \]
+            covers $(0,1)$, but has \textbf{no finite subcover}.
+        \end{itemize}
+    \end{example}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Figure}
+    Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+    %\begin{figure}
+    %\includegraphics[width=0.8\linewidth]{test}
+    %\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+    \frametitle{Citation}
+    An example of the \verb|\cite| command to cite within the presentation:\\~
+
+    This statement requires citation \cite{a1}.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{References}
+    I generally advise against including a bibliography in presentations, but if you need to you can use the following code to include it:
+    \footnotesize
+    \bibliography{reference.bib}
+    \bibliographystyle{apalike}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+    \Huge{\centerline{\textbf{The End}}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

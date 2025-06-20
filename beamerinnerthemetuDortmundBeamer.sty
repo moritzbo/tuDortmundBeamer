@@ -1,0 +1,136 @@
+%-------------------------------------------------------------
+%  Package: beamertheme-tuDortmundBeamer
+%  Author: Moritz Bosse (moritz.bosse@outlook.de)
+%  Version: 1.0, 2025-06-18
+%  License: MIT License
+%  Repository: https://github.com/moritzbo/tuDortmundBeamer
+%-------------------------------------------------------------
+
+%--------------------------------------
+%  Inner Theme Settings
+%--------------------------------------
+
+\pgfdeclareverticalshading[lower.bg,upper.bg]{bmb@transition}{200cm}{%
+color(0pt)=(lower.bg); color(2pt)=(lower.bg); color(4pt)=(lower.bg)}
+
+\setbeamersize{text margin left=2em,text margin right=2em}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{enumerate subitem}[default]
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+
+% table of contents (overview) settings
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}{%
+    \leavevmode
+    \leftskip=3.2em
+    \rlap{\hskip-2em\inserttocsectionnumber.\inserttocsubsectionnumber}
+    \inserttocsubsection\par
+}
+
+%--------------------------------------
+%  Custom Block Environments
+%--------------------------------------
+
+% Blue colored block
+\setbeamercolor{block title blueblock}{fg=white,bg=MediumBlue}
+\setbeamercolor{block body blueblock}{fg=black,bg=MutedBlue}
+
+\newenvironment{blueblock}[1]{%
+  \setbeamercolor{block title}{fg=white,bg=MediumBlue}%
+  \setbeamercolor{block body}{fg=black,bg=MutedBlue}%
+  \begin{block}{#1}
+}{%
+  \end{block}
+}
+% Theme colored block
+
+\setbeamercolor{block title greenblock}{fg=white,bg=CalPolyGreen}
+\setbeamercolor{block body greenblock}{fg=black,bg=MutedCalPolyGreen}
+
+\newenvironment{greenblock}[1]{%
+  \setbeamercolor{block title}{fg=white,bg=CalPolyGreen}%
+  \setbeamercolor{block body}{fg=black,bg=MutedCalPolyGreen}%
+  \begin{block}{#1}
+}{%
+  \end{block}
+}
+% TU Dortmund green colored block
+\setbeamercolor{block title tublock}{fg=white,bg=tugreen}
+\setbeamercolor{block body tublock}{fg=black,bg=tugreen60}
+
+\newenvironment{tublock}[1]{%
+  \setbeamercolor{block title}{fg=white,bg=tugreen}%
+  \setbeamercolor{block body}{fg=black,bg=tugreen60}%
+  \begin{block}{#1}
+}{%
+  \end{block}
+}
+
+% TU Dortmund orange colored block
+\setbeamercolor{block title tuorangeblock}{fg=white,bg=tuorange}
+\setbeamercolor{block body tuorangeblock}{fg=black,bg=tuorange60}
+
+\newenvironment{tuorangeblock}[1]{%
+  \setbeamercolor{block title}{fg=white,bg=tuorange}%
+  \setbeamercolor{block body}{fg=black,bg=tuorange60}%
+  \begin{block}{#1}
+}{%
+  \end{block}
+}
+
+
+% title page customization
+\setbeamertemplate{title page}{%
+    \vspace{6em}
+    \begingroup
+    \centering
+    % ------------------------
+    \begin{beamercolorbox}[sep=10pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\inserttitle\par%
+        \ifx\insertsubtitle\@empty%
+        \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+        \fi%
+    \end{beamercolorbox}%
+    \vskip0.5em\par
+    % ------------------------
+    \begin{beamercolorbox}[sep=8pt,center]{author}
+        \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \vskip-1em
+    % ------------------------
+    \begin{beamercolorbox}[sep=8pt,center]{institute}
+        \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    % ------------------------
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+        \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    % ------------------------
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+    % ------------------------
+% === Place one or two Logos ===
+\begin{tikzpicture}[remember picture, overlay]
+
+    % TU Dortmund logo: bottom left, shifted left
+    \node[anchor=south west, xshift=1.0cm, yshift=0.2cm] at (current page.south west) {
+      \includegraphics[height=0.93cm]{logos/Technische_Universität_Dortmund_Logo.pdf}
+    };
+  
+    % Second logo: bottom right
+    \node[anchor=south east, xshift=-1.0cm, yshift=0.2cm] at (current page.south east) {
+      \includegraphics[height=0.93cm]{logos/Logo_Department_of_Physics__englisch__RGB.pdf}
+    };
+
+    \end{tikzpicture}
+    \endgroup
+    \vfill
+}

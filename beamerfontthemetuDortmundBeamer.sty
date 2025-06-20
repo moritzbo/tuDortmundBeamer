@@ -1,0 +1,34 @@
+%-------------------------------------------------------------
+%  Package: beamertheme-tuDortmundBeamer
+%  Author: Moritz Bosse (moritz.bosse@outlook.de)
+%  Version: 1.0, 2025-06-18
+%  License: MIT License
+%  Repository: https://github.com/moritzbo/tuDortmundBeamer
+%-------------------------------------------------------------
+
+%--------------------------------------
+%  Font Settings
+%--------------------------------------
+
+\RequirePackage{XCharter} % Load Charter font globally
+\renewcommand{\familydefault}{\rmdefault} 
+
+\setbeamerfont{structure}{series=\mdseries} 
+
+\setbeamerfont{title}{size=\LARGE,parent=structure}
+\setbeamerfont{subtitle}{size=\normalsize,parent=title}
+
+\setbeamerfont{date}{size=\scriptsize,series=\mdseries,parent=structure}
+\setbeamerfont{author}{size=\large,series=\mdseries,parent=structure}
+\setbeamerfont{institute}{size=\scriptsize,series=\mdseries,parent=structure}
+
+\setbeamerfont{section in toc}{size=\large,parent=structure}
+\setbeamerfont{section in head/foot}{size=\tiny,parent=structure}
+\setbeamerfont{subsection in toc}{size=\small,parent={section in toc}}
+
+\setbeamerfont{frametitle}{size=\Large,parent=structure}
+\setbeamerfont{framesubtitle}{parent=frametitle,size=\large}
+
+\setbeamerfont{caption}{size=\footnotesize}
+\setbeamerfont{item}{parent=structure,series=\mdseries}
+\setbeamerfont{block title}{size=\large,series=\mdseries,parent={structure,block body}}
