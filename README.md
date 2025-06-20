@@ -1,5 +1,7 @@
-![Slide 1](preview/slide01.webp) ![Slide 8](preview/slide08.webp)
-
+<p align="center">
+  <img src="preview/slide01.webp" width="45%" />
+  <img src="preview/slide08.webp" width="45%" />
+</p>
 
 # 🟢 TU Dortmund Beamer Theme
 
