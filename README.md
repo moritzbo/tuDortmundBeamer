@@ -66,3 +66,29 @@ You can switch between TU Dortmund color options inside `beamercolorthemeTuDortm
 % TU OPTION (LESS BRIGHT GREEN)
 %\setbeamercolor{title}{bg=tugreen80,fg=white}
 %\setbeamercolor{frametitle}{bg=tugreen80,fg=white}
+
+---
+
+## Preview
+
+Below are some example slides created with the SimpleDarkBlue Beamer Theme:
+
+![Slide 1](preview/slide01.webp)
+![Slide 3](preview/slide03.webp)
+![Slide 4](preview/slide04.webp)
+![Slide 6](preview/slide06.webp)
+![Slide 8](preview/slide08.webp)
+![Slide 9](preview/slide09.webp)
+![Slide 10](preview/slide10.webp)
+![Slide 12](preview/slide12.webp)
+![Slide 13](preview/slide13.webp)
+![Slide 15](preview/slide15.webp)
+
+
+![Slide 2](preview/slide-2.webp)
+![Slide 3](preview/slide-3.webp)
+![Slide 4](preview/slide-4.webp)
+![Slide 5](preview/slide-5.webp)
+![Slide 6](preview/slide-6.webp)
+![Slide 9](preview/slide-9.webp)
+![Slide 10](preview/slide-10.webp)
